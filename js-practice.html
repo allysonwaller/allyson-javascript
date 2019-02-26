@@ -76,6 +76,38 @@
     console.log(makeFullnameReturn.length);
     console.log(makeFullnameReturn.toUpperCase());
 
+    console.log('Making a better name function');
+
+    function makeBetterName(firstName, middleName, lastName) {
+  if (middleName.length === 1) {
+    middleName = middleName + ".";
+    let fullName = firstName + " " + middleName + " " + lastName;
+    return fullName;
+} else {
+  let fullName = firstName + " " + middleName + " " + lastName;
+    return fullName;
+  }
+}
+
+console.log(makeBetterName("Joan", "Marie", "Larkin"));
+console.log(makeBetterName("Donald", "F", "Trump"));
+
+  function makeScore(home, away) {
+    if (home > away) {
+    return 'Home team wins!';
+} else if (away > home) {
+  return 'Away team wins!';
+  } else { 
+    return "It's a tie!";
+  }
+}
+  
+
+console.log(makeScore(10,5));
+console.log(makeScore(5,10));
+console. log(makeScore(5,5));
+
+
     /*
     FYI that this is a comment, too
     but it can be on more then one line
